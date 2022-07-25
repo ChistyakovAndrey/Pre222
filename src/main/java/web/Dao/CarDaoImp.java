@@ -1,12 +1,13 @@
 package web.Dao;
 
+import org.springframework.stereotype.Component;
 import web.model.Car;
 import java.util.ArrayList;
 import java.util.List;
-
-public class DaoImp implements Dao{
+@Component
+public class CarDaoImp implements CarDao {
     private List<Car> carList;
-    public DaoImp(){
+    public CarDaoImp(){
         List<Car> list = new ArrayList<>();
         list.add(new Car("Tahoe", "Black", 625));
         list.add(new Car("Duster", "Black", 135));
@@ -17,6 +18,7 @@ public class DaoImp implements Dao{
     }
     @Override
     public List<Car> getCarList() {
+        System.out.println();
         return carList;
     }
 }

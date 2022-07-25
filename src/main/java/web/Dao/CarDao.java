@@ -4,6 +4,6 @@ import web.model.Car;
 
 import java.util.List;
 
-public interface Dao {
+public interface CarDao {
     List<Car> getCarList();
 }
