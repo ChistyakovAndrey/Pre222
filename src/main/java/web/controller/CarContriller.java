@@ -13,7 +13,6 @@ import web.service.CarServiceImp;
 import java.util.List;
 
 @Controller
-@Component
 public class CarContriller {
     private final CarServiceImp carServiceImp;
 
